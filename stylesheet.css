@@ -1,0 +1,12 @@
+.grid-container {
+  display: grid;
+  display: inline-grid;
+  grid-template-columns: repeat(12,1fr);
+  grid-template-rows: repeat(7,1fr)
+  grid-gap: 0px;
+  padding-right: 1fr;
+  padding-left: 1fr;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  width: 100%;
+  }
