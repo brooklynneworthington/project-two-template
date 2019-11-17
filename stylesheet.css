@@ -1,7 +1,134 @@
-/** GRID **/
+/** MENU **/
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+html {
+    font-family: lackreg;
+    color: black;
+    font-size: 2vw;
+}
+
+.nav {
+    border-bottom: 1px solid #EAEAEB;
+    text-align: center;
+    height: 70px;
+    line-height: 70px;
+}
+
+.menu {
+    margin: 0 30px 0 0;
+}
+
+.menu a {
+    clear: right;
+    text-decoration: none;
+    color: black;
+    margin: 100px 100px 100px 100px;
+    line-height: 70px;
+}
+
+label {
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right;
+}
+
+#toggle {
+    display: none;
+}
+
+@media only screen and (max-width: 1100px) {
+    label {
+        display: block;
+        cursor: pointer;
+    }
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+    .menu a {
+        display: block;
+        border-bottom: 1px solid #EAEAEB;
+        margin: 0;
+     
+    }
+    #toggle:checked + .menu {
+        display: block;
+    }}
+
+/** FONTS **/
+
+@font-face {
+  font-family: 'lackline';
+  src:  url('fonts/lackline.woff2') format('woff2'),
+        url('fonts/lackline.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'lackreg';
+  src:  url('fonts/lackreg.woff2') format('woff2'),
+        url('fonts/lackreg.woff') format('woff');
+}
+
+h1 { 
+  font-family: lackline;
+  color: black;
+  font-size: 2vw;
+  margin: 0;
+ }
+
+h2 {
+  font-family: lackreg;
+  color: #C2573F;
+  font-size: 2vw;
+  margin: 0;
+}
+
+h3 {
+  font-family: lackreg;
+  color: white;
+  font-size: 2vw;
+}
+
+
+/** INDEX HEADERS **/
+
+.index-text-header {
+  height: 200px;
+  position: relative;
+  border: 3px solid green; 
+}
+
+.index-text-header h2 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.index-text-header h3 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+/** GRID 
 
 .body {
-  background-color: #000000;
+  background-color: blue;
   padding-right: 0px;
   padding-left: 0px;
   padding-top: 0px;
@@ -26,10 +153,12 @@
   margin: 0px;
 }
 
-/** All styles **/
+**/
+
+/** All styles 
 
 body {
-  background-color: #000000;
+  background-color: blue;
 }
 
 @font-face {
@@ -44,26 +173,12 @@ body {
         url('fonts/lackreg.woff') format('woff');
 }
 
-h1 { 
-  font-family: lackline;
-  color: white;
-  font-size: 50px;
- }
-
-h2 {
-  font-family: lackreg;
-  color: #C2573F;
-  font-size: 50px;
-}
-
-h3 {
-  font-family: lackreg;
-  color: white;
-  font-size: 30px;
-}
 
 
-/** Index **/
+**/
+
+
+/** Index 
 
 .nav-pricing {
   grid-column-start: 4;
@@ -98,29 +213,7 @@ h3 {
   position: absolute;
 }
 
-.citizens-photo-line {
-  grid-column-start: 2;
-  grid-column-end: 12;
-  grid-row-start: 4;
-  grid-row-end: 5;
-  text-align: center;
-}
 
-.citizens-photo-solid1 {
-  grid-column-start: 2;
-  grid-column-end: 12;
-  grid-row-start: 5;
-  grid-row-end: 6;
-  text-align: center;
-}
-
-.citizens-photo-solid2 {
-  grid-column-start: 2;
-  grid-column-end: 12;
-  grid-row-start: 3;
-  grid-row-end: 4;
-  text-align: center;
-}
 
 .home-footer {
   grid-column-start: 1;
@@ -129,3 +222,5 @@ h3 {
   grid-row-end: 7; 
   object-fit: fill;
 }
+
+**/
