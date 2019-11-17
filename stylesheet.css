@@ -1,12 +1,131 @@
-.grid-container {
+/** GRID **/
+
+.body {
+  background-color: #000000;
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin: 0em;
+}
+
+.grid-container-index {
   display: grid;
   display: inline-grid;
   grid-template-columns: repeat(12,1fr);
   grid-template-rows: repeat(7,1fr)
-  grid-gap: 0px;
-  padding-right: 1fr;
-  padding-left: 1fr;
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding: 0em;
+  margin: 0em;
   width: 100%;
   }
+
+.grid-container > div {
+  text-align: center;
+  padding: 0;
+  font-size: 15px;
+  margin: 0px;
+}
+
+/** All styles **/
+
+body {
+  background-color: #000000;
+}
+
+@font-face {
+  font-family: 'lackline';
+  src:  url('fonts/lackline.woff2') format('woff2'),
+        url('fonts/lackline.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'lackreg';
+  src:  url('fonts/lackreg.woff2') format('woff2'),
+        url('fonts/lackreg.woff') format('woff');
+}
+
+h1 { 
+  font-family: lackline;
+  color: white;
+  font-size: 50px;
+ }
+
+h2 {
+  font-family: lackreg;
+  color: #C2573F;
+  font-size: 50px;
+}
+
+h3 {
+  font-family: lackreg;
+  color: white;
+  font-size: 30px;
+}
+
+
+/** Index **/
+
+.nav-pricing {
+  grid-column-start: 4;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  text-align: center;
+}
+
+.nav-about {
+  grid-column-start: 6;
+  grid-column-end: 8;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  text-align: center;
+}
+
+.nav-contact {
+  grid-column-start: 8;
+  grid-column-end: 10;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  text-align: center;
+}
+
+.home-img {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 2;
+  grid-row-end: 7;
+  object-fit: contain;
+  position: absolute;
+}
+
+.citizens-photo-line {
+  grid-column-start: 2;
+  grid-column-end: 12;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  text-align: center;
+}
+
+.citizens-photo-solid1 {
+  grid-column-start: 2;
+  grid-column-end: 12;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  text-align: center;
+}
+
+.citizens-photo-solid2 {
+  grid-column-start: 2;
+  grid-column-end: 12;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  text-align: center;
+}
+
+.home-footer {
+  grid-column-start: 1;
+  grid-column-end: 13;
+  grid-row-start: 7;
+  grid-row-end: 7; 
+  object-fit: fill;
+}
