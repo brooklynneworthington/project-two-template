@@ -1,5 +1,9 @@
 /** MENU **/
 
+body {
+  background-size: contain;
+}
+
 html, body {
     width: 100%;
     height: 100%;
@@ -13,7 +17,7 @@ html {
 }
 
 .nav {
-    border-bottom: 1px solid #EAEAEB;
+    border-bottom: transparent;
     text-align: center;
     height: 70px;
     line-height: 70px;
@@ -56,7 +60,7 @@ label {
     }
     .menu a {
         display: block;
-        border-bottom: 1px solid #EAEAEB;
+        border-bottom: transparent;
         margin: 0;
      
     }
@@ -90,6 +94,7 @@ h2 {
   color: #C2573F;
   font-size: 8vw;
   margin: 0;
+  z-index: -1;
 }
 
 h3 {
@@ -104,10 +109,14 @@ h3 {
 .index-text-header {
   height: 100vh;
   width: 100vw;
-  margin: 1vw;
   position: absolute;
-  border: 3px solid green; 
+  border: 3px black; 
   text-align: center;
+  margin-top: 30vh;
+  margin-bottom: 30vh;
+  margin-right: 0;
+  margin-left: 0;
+  z-index: 1
 }
 
 .center p {
@@ -118,115 +127,14 @@ h3 {
   transform: translate(-50%, -50%);
 }
 
-/**
-.index-text-header h2 {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-**/ 
-
-
-
-/** GRID 
-
-.body {
-  background-color: blue;
-  padding-right: 0px;
-  padding-left: 0px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  margin: 0em;
-}
-
-.grid-container-index {
-  display: grid;
-  display: inline-grid;
-  grid-template-columns: repeat(12,1fr);
-  grid-template-rows: repeat(7,1fr)
-  padding: 0em;
-  margin: 0em;
-  width: 100%;
-  }
-
-.grid-container > div {
-  text-align: center;
-  padding: 0;
-  font-size: 15px;
-  margin: 0px;
-}
-
-**/
-
-/** All styles 
-
-body {
-  background-color: blue;
-}
-
-@font-face {
-  font-family: 'lackline';
-  src:  url('fonts/lackline.woff2') format('woff2'),
-        url('fonts/lackline.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'lackreg';
-  src:  url('fonts/lackreg.woff2') format('woff2'),
-        url('fonts/lackreg.woff') format('woff');
-}
-
-
-
-**/
-
-
-/** Index 
-
-.nav-pricing {
-  grid-column-start: 4;
-  grid-column-end: 6;
-  grid-row-start: 1;
-  grid-row-end: 2;
+.index-img img {
+  width: 40vw;
+  z-index: 1;
   text-align: center;
 }
 
-.nav-about {
-  grid-column-start: 6;
-  grid-column-end: 8;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  text-align: center;
+.home-footer img {
+  width: 100vw;
+  position: fixed;
+  bottom: 0px;
 }
-
-.nav-contact {
-  grid-column-start: 8;
-  grid-column-end: 10;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  text-align: center;
-}
-
-.home-img {
-  grid-column-start: 5;
-  grid-column-end: 9;
-  grid-row-start: 2;
-  grid-row-end: 7;
-  object-fit: contain;
-  position: absolute;
-}
-
-
-
-.home-footer {
-  grid-column-start: 1;
-  grid-column-end: 13;
-  grid-row-start: 7;
-  grid-row-end: 7; 
-  object-fit: fill;
-}
-
-**/
